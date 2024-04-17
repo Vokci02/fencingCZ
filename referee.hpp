@@ -8,6 +8,12 @@ class CReferee : public CPerson
               const std::string &club,
               const std::string &country,
               const int id);
+  int getId () const;
+  void addPoolRefered (int poolSize);
+  void addDEMatchRefered ();
+  void addFinalMatchRefered ();
+  int calculateSalary () const;
+  
   private:
     std::map <int, int> m_poolsRefered;
     int m_deMatchesRefered;
