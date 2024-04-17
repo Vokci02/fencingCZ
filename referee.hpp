@@ -1,3 +1,4 @@
+#include <iostream>
 #include <map>
 #include "person.hpp"
 class CReferee : public CPerson
