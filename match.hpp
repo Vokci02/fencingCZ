@@ -17,5 +17,4 @@ class CMatch
     int m_leftScore;
     int m_rightScore;
     CFencer m_winner;
-
 };

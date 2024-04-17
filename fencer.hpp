@@ -9,7 +9,8 @@ class CFencer : public CPerson
              const std::string &weapon,
              const bool isLeftHanded,
              const int birthYear,
-             const int globalRank);
+             const int globalRank,
+             const int id);
   private:
     std::string m_weapon;
     bool m_isLeftHanded;
@@ -22,5 +23,6 @@ class CFencer : public CPerson
     float m_wonPoolMacthesRatio;
     int m_scoredPoolTouches;
     int m_receivedPoolTouches;
-    int m_poolTouchesIndex;    
+    int m_poolTouchesIndex;
+    int m_id;    
 };

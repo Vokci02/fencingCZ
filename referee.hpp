@@ -6,9 +6,11 @@ class CReferee : public CPerson
     CReferee (const std::string &name,
               const std::string &surname,
               const std::string &club,
-              const std::string &country);
+              const std::string &country,
+              const int id);
   private:
     std::map <int, int> m_poolsRefered;
     int m_deMatchesRefered;
     int m_finalMatchesRefered;
+    int m_id;
 };

@@ -12,8 +12,9 @@ class CDEMatch : public CMatch
   private:
     std::vector <CReferee> m_referees;
     std::vector <CReferee> m_videoReferees;    
-    int m_piste;
     std::string m_time;
+    int m_id;
+    int m_piste;
     bool m_yellowCard;
     bool m_redCard;
     bool m_g3RedCard;
@@ -21,5 +22,5 @@ class CDEMatch : public CMatch
     bool m_pYellowCard;
     bool m_pRedCard;
     bool m_pBlackCard;
-    
+
 };
