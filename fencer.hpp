@@ -34,7 +34,7 @@ class CFencer : public CPerson
     void calculatePoolMatchesRatio ();
     void calculatePoolTouchesIndex ();
 
-
+    void print () const;
 
     bool isLeftHanded;
     bool recievedG3RedCard;

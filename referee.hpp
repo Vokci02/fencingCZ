@@ -13,7 +13,8 @@ class CReferee : public CPerson
   void addDEMatchRefered ();
   void addFinalMatchRefered ();
   int calculateSalary () const;
-  
+  void print () const;
+
   private:
     std::map <int, int> m_poolsRefered;
     int m_deMatchesRefered;

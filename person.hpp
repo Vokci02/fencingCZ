@@ -6,7 +6,7 @@ class CPerson
              const std::string &surname,
              const std::string &club,
              const std::string &country);
-
+    
   private:
     std::string m_name;
     std::string m_surname;
