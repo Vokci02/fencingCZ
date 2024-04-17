@@ -2,6 +2,7 @@
 #include <vector>
 #include "fencer.hpp"
 #include "referee.hpp"
+#include "pool.hpp"
 class CEvent
 {
   public:
@@ -28,5 +29,5 @@ class CEvent
     std::string m_format;
     std::vector <CFencer> m_fencers;
     std::vector <CReferee> m_referees;
-
+    std::vector <CPool> m_pools;
 };

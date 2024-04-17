@@ -6,7 +6,7 @@ class CMenu
     void run ();
   
   private:
-    createNewEvent ();
-    loadEvent ();
+    int createNewEvent ();
+    int loadEvent ();
     std::vector <CEvent> m_events;
-}
+};
