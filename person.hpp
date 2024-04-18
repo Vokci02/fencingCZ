@@ -1,4 +1,7 @@
+#ifndef PERSON_HPP
+#define PERSON_HPP
 #include <string>
+
 class CPerson
 {
   public:
@@ -13,3 +16,5 @@ class CPerson
     std::string m_club;
     std::string m_country;
 };
+
+#endif

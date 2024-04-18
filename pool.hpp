@@ -1,7 +1,10 @@
+#ifndef POOL_HPP
+#define POOL_HPP
 #include <vector>
 #include "fencer.hpp"
 #include "referee.hpp"
 #include "match.hpp"
+
 class CPool 
 {
   public:
@@ -17,3 +20,5 @@ class CPool
     int m_piste;
     std::string m_time;
 };
+
+#endif

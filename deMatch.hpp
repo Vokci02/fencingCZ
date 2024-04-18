@@ -1,3 +1,5 @@
+#ifndef DEMATCH_HPP
+#define DEMATCH_HPP
 #include <string>
 #include <vector>
 #include "match.hpp"
@@ -24,3 +26,5 @@ class CDEMatch : public CMatch
     bool m_pBlackCard;
 
 };
+
+#endif

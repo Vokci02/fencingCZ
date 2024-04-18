@@ -1,8 +1,11 @@
+#ifndef EVENT_HPP
+#define EVENT_HPP
 #include <string>
 #include <vector>
 #include "fencer.hpp"
 #include "referee.hpp"
 #include "pool.hpp"
+
 class CEvent
 {
   public:
@@ -31,3 +34,5 @@ class CEvent
     std::vector <CReferee> m_referees;
     std::vector <CPool> m_pools;
 };
+
+#endif

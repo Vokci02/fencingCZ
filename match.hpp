@@ -1,5 +1,8 @@
+#ifndef MATCH_HPP
+#define MATCH_HPP
 #include <utility>
 #include "fencer.hpp"
+
 class CMatch
 {
   public:
@@ -18,3 +21,5 @@ class CMatch
     int m_rightScore;
     CFencer m_winner;
 };
+
+#endif

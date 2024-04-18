@@ -1,5 +1,8 @@
+#ifndef MENU_HPP
+#define MENU_HPP
 #include <vector>
 #include "event.hpp"
+
 class CMenu
 {
   public:
@@ -10,3 +13,5 @@ class CMenu
     int loadEvent ();
     std::vector <CEvent> m_events;
 };
+
+#endif

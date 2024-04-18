@@ -1,6 +1,9 @@
+#ifndef REFEREE_HPP
+#define REFEREE_HPP
 #include <iostream>
 #include <map>
 #include "person.hpp"
+
 class CReferee : public CPerson
 {
   public:
@@ -22,3 +25,5 @@ class CReferee : public CPerson
     int m_finalMatchesRefered;
     int m_id;
 };
+
+#endif

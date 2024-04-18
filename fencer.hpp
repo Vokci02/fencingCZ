@@ -1,4 +1,7 @@
+#ifndef FENCER_HPP
+#define FENCER_HPP
 #include "person.hpp"
+
 class CFencer : public CPerson
 {
   public:
@@ -53,3 +56,5 @@ class CFencer : public CPerson
     int m_poolTouchesIndex;
     int m_id;
 };
+
+#endif

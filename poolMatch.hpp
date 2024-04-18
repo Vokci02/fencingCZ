@@ -1,4 +1,7 @@
+#ifndef POOLMATCH_HPP
+#define POOLMATCH_HPP
 #include "match.hpp"
+
 class CPoolMatch : public CMatch
 {
   public:
@@ -8,3 +11,5 @@ class CPoolMatch : public CMatch
   private:
 
 };
+
+#endif
