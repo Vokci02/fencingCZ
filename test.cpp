@@ -33,6 +33,8 @@ int main ()
   f1.print ();
   f2.print ();
 
+  std::cout << "Name: " << f1.getName () << std::endl;
+
   return 0;
 
 }

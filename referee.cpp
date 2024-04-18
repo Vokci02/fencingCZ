@@ -56,6 +56,7 @@ void CReferee::print                ()                const
   std::cout   << "Referee: "               <<     m_name
               << " "                       <<     m_surname                 << std::endl;
   std::cout   << "Club: "                  <<     m_club                    << std::endl;
+  std::cout   << "Club abbreviation: "     <<     m_clubShort               << std::endl;
   std::cout   << "Country: "               <<     m_country                 << std::endl;
   std::cout   << "ID: "                    <<     m_id                      << std::endl;
   std::cout   << "Salary: "                <<     calculateSalary ()        << std::endl;

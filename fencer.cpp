@@ -159,6 +159,7 @@ void CFencer::print                     () const
   std::cout << "Fencer: "                <<     m_name
             << " "                       <<     m_surname                 << std::endl;
   std::cout << "Club: "                  <<     m_club                    << std::endl;
+  std::cout << "Club abbreviation: "     <<     m_clubShort               << std::endl;
   std::cout << "Country: "               <<     m_country                 << std::endl;
   std::cout << "Weapon: "                <<     m_weapon                  << std::endl;
   std::cout << "Birth year: "            <<     m_birthYear               << std::endl;

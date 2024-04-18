@@ -10,7 +10,12 @@ class CPerson
               const std::string &club     ,
               const std::string &clubShort,
               const std::string &country  );
-    
+
+    std::string getName      () const;
+    std::string getSurname   () const;
+    std::string getClub      () const;
+    std::string getCountry   () const;
+    std::string getClubShort () const; 
   protected:
     std::string m_name;
     std::string m_surname;
