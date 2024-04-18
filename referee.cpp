@@ -8,7 +8,7 @@ CReferee::CReferee( const std::string &name,
                     const int id )
     : CPerson ( name, surname, club, country )
 {
-  this -> m_id = id;
+  m_id = id;
   m_deMatchesRefered = 0;
   m_finalMatchesRefered = 0;
 }
