@@ -60,7 +60,8 @@ void CReferee::print                ()                const
   std::cout   << "Country: "               <<     m_country                 << std::endl;
   std::cout   << "ID: "                    <<     m_id                      << std::endl;
   std::cout   << "Salary: "                <<     calculateSalary ()        << std::endl;
-  std::cout   << "Pools refered: "                       << std::endl;
+  std::cout   << "Pools refered: "                                          << std::endl;
+  
   for ( std::map <int, int>::const_iterator it = m_poolsRefered.begin (); it != m_poolsRefered.end (); it++ )
   {
     std::cout << "Pool size: "             <<     it -> first        
