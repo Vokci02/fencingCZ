@@ -5,7 +5,7 @@ CReferee::CReferee( const std::string &name,
                     const std::string &surname,
                     const std::string &club,
                     const std::string &country,
-                    const int id )
+                    const int         id )
     : CPerson ( name, surname, club, country )
 {
   m_id = id;
@@ -13,7 +13,7 @@ CReferee::CReferee( const std::string &name,
   m_finalMatchesRefered = 0;
 }
 
-int CReferee::getId() const
+int CReferee::getId () const
 {
   return m_id;
 }
@@ -23,7 +23,7 @@ void CReferee::addPoolRefered ( int poolSize )
   if ( m_poolsRefered.find( poolSize ) == m_poolsRefered.end () )
     m_poolsRefered.insert ( std::make_pair ( poolSize, 1 ) );
   else
-    m_poolsRefered[poolSize]++;
+    m_poolsRefered [ poolSize ]++;
 }
 
 void CReferee::addDEMatchRefered ()

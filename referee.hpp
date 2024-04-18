@@ -11,19 +11,19 @@ class CReferee : public CPerson
               const std::string &surname,
               const std::string &club,
               const std::string &country,
-              const int id);
-  int getId () const;
-  void addPoolRefered (int poolSize);
-  void addDEMatchRefered ();
+              const int         id);
+  int  getId                ()               const;
+  void addPoolRefered       ( int poolSize );
+  void addDEMatchRefered    ();
   void addFinalMatchRefered ();
-  int calculateSalary () const;
-  void print () const;
+  int  calculateSalary      ()               const;
+  void print                ()               const;
 
   private:
-    std::map <int, int> m_poolsRefered;
-    int m_deMatchesRefered;
-    int m_finalMatchesRefered;
-    int m_id;
+    std::map <int, int>   m_poolsRefered;
+    int                   m_deMatchesRefered;
+    int                   m_finalMatchesRefered;
+    int                   m_id;
 };
 
 #endif
