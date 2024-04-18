@@ -3,21 +3,21 @@
 
 int main ()
 {
-  CReferee r1 ( "Fanda", "Vokac", "TJLKV", "CZE", 1 );
-  CReferee r2 ( "Pavel", "Kral", "TJLKV", "CZE", 2 );
+  CReferee r1 ( "Fanda", "Vokac", "TJ Lokomotiva Karlovy Vary", "TJLKV", "CZE", 1 );
+  CReferee r2 ( "Pavel", "Kral", "TJ Lokomotiva Karlovy Vary", "TJLKV", "CZE", 2 );
   r1.addPoolRefered ( 6 );
   r1.addPoolRefered ( 6 );
   r2.addPoolRefered ( 7 );
   r2.addPoolRefered ( 8 );
-  for (int i = 0; i < 5; i++)
+  for ( int i = 0; i < 5; i++ )
     r1.addDEMatchRefered ();
-  for (int i = 0; i < 3; i++)
+  for ( int i = 0; i < 3; i++ )
     r2.addFinalMatchRefered ();
   r1.print ();
   r2.print ();
   
-  CFencer f1 ( "Petr", "Novak", "TJLKV", "CZE", "epee", true, 2000, 1, 1 );
-  CFencer f2 ( "Jiri", "Svoboda", "TJLKV", "CZE", "foil", false, 1999, 2, 2 );
+  CFencer f1 ( "Petr", "Novak", "TJ Lokomotiva Karlovy Vary", "TJLKV", "CZE", "epee", true, 2000, 1, 1 );
+  CFencer f2 ( "Jiri", "Svoboda", "TJ Lokomotiva Karlovy Vary", "TJLKV", "CZE", "foil", false, 1999, 2, 2 );
   f1.setWonPoolMatches ( 5 );
   f1.setLostPoolMatches ( 1 );
   f2.setWonPoolMatches ( 3 );

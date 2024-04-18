@@ -7,19 +7,19 @@ class CMatch
 {
   public:
     CMatch ();
-    void assignFencers (const CFencer &fencer1, const CFencer &fencer2);
-    virtual int finishMatch (int leftScore, int rightScore);
-    std::pair <int, int> getScore () const;
-    CFencer getWinner () const;
-    void setWinner (const CFencer &winner);
+    void                   assignFencers ( const CFencer &fencer1, const CFencer &fencer2 )      ;
+    virtual int            finishMatch   ( int leftScore, int rightScore )                       ;
+    std::pair <int, int>   getScore      ()                                                 const;
+    CFencer                getWinner     ()                                                 const;
+    void                   setWinner     ( const CFencer &winner )                               ;
     
-    bool finished;
+    bool                   finished;
   protected:
-    CFencer m_leftFencer;
-    CFencer m_rightFencer;
-    int m_leftScore;
-    int m_rightScore;
-    CFencer m_winner;
+    CFencer                m_leftFencer;
+    CFencer                m_rightFencer;
+    int                    m_leftScore;
+    int                    m_rightScore;
+    CFencer                m_winner;
 };
 
 #endif

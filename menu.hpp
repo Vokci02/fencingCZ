@@ -6,11 +6,11 @@
 class CMenu
 {
   public:
-    void run ();
+    void run             ();
   
   private:
-    int createNewEvent ();
-    int loadEvent ();
+    int createNewEvent   ();
+    int loadEvent        ();
     std::vector <CEvent> m_events;
 };
 

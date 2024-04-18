@@ -12,13 +12,13 @@ class CPool
   
   private:
     
-    std::vector <CFencer> m_fencers;
+    std::vector <CFencer>  m_fencers;
     std::vector <CReferee> m_referees;
-    std::vector <CMatch> m_matches;
-    bool m_finished;
-    int m_poolNumber;
-    int m_piste;
-    std::string m_time;
+    std::vector <CMatch>   m_matches;
+    bool                   m_finished;
+    int                    m_poolNumber;
+    int                    m_piste;
+    std::string            m_time;
 };
 
 #endif

@@ -5,8 +5,8 @@
 class CPoolMatch : public CMatch
 {
   public:
-    CPoolMatch ();
-    int finishMatch (int leftScore, int rightScore);
+    CPoolMatch      ()                               ;
+    int finishMatch ( int leftScore, int rightScore );
 
   private:
 
