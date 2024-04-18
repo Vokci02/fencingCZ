@@ -9,7 +9,7 @@ class CDEMatch : public CMatch
 {
   public:
     CDEMatch ();
-    int setScore (int leftScore, int rightScore);
+    int finishMatch (int leftScore, int rightScore);
 
   private:
     std::vector <CReferee> m_referees;
@@ -17,13 +17,18 @@ class CDEMatch : public CMatch
     std::string m_time;
     int m_id;
     int m_piste;
-    bool m_yellowCard;
-    bool m_redCard;
-    bool m_g3RedCard;
-    bool m_blackCard;
+    bool m_yellowCardLeft;
+    bool m_redCardLeft;
+    bool m_g3RedCardLeft;
+    bool m_blackCardLeft;
+    bool m_yellowCardRight;
+    bool m_redCardRight;
+    bool m_g3RedCardRight;
+    bool m_blackCardRight;
     bool m_pYellowCard;
     bool m_pRedCard;
-    bool m_pBlackCard;
+    bool m_pBlackCardLeft;
+    bool m_pBlackCardRight;
 
 };
 
