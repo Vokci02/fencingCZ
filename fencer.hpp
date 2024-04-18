@@ -1,6 +1,7 @@
 #ifndef FENCER_HPP
 #define FENCER_HPP
 #include "person.hpp"
+#include <iostream>
 
 class CFencer : public CPerson
 {
@@ -25,7 +26,9 @@ class CFencer : public CPerson
     int getReceivedPoolTouches () const;
     int getPoolTouchesIndex () const;
     int getId () const;
-    
+    bool isCheckedIn () const;
+    bool isScratched () const;
+
     void setPoolSeed (int seed);
     void setDESeed (int seed);
     void setWonPoolMatches (int matches);
@@ -33,7 +36,9 @@ class CFencer : public CPerson
     void setScoredPoolTouches (int touches);
     void setReceivedPoolTouches (int touches);
     void setPoolTouchesIndex (int index);
-    
+    void checkIn ();
+    void scratch ();
+
     void calculatePoolMatchesRatio ();
     void calculatePoolTouchesIndex ();
 
@@ -55,6 +60,8 @@ class CFencer : public CPerson
     int m_receivedPoolTouches;
     int m_poolTouchesIndex;
     int m_id;
+    bool m_checkedIn;
+    bool m_scratched;
 };
 
 #endif
