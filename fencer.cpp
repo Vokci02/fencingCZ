@@ -32,17 +32,17 @@ CFencer::CFencer ( const std::string &name         ,
 
 }
 
-std::string CFencer::getWeapon        ()                const
+std::string CFencer::getWeapon          ()              const
 {
   return m_weapon;
 }
 
-int CFencer::getGlobalRank            ()                const
+int CFencer::getGlobalRank              ()              const
 {
   return m_globalRank;
 }
 
-int CFencer::getPoolSeed              ()                const
+int CFencer::getPoolSeed                ()              const
 {
   return m_poolSeed;
 }
