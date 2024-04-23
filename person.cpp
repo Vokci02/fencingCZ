@@ -1,5 +1,14 @@
 #include "person.hpp"
 
+CPerson::CPerson ()
+{
+  m_name = "undefined";
+  m_surname = "undefined";
+  m_club = "undefined";
+  m_clubShort = "undefined";
+  m_country = "undefined";
+}
+
 CPerson::CPerson ( const std::string &name     ,
                    const std::string &surname  ,
                    const std::string &club     ,

@@ -6,6 +6,7 @@
 class CFencer : public CPerson
 {
   public:
+    CFencer ();
     CFencer ( const std::string &name       ,
               const std::string &surname    ,
               const std::string &club       ,

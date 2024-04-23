@@ -1,5 +1,27 @@
 #include "fencer.hpp"
 
+CFencer::CFencer ()
+  : CPerson ()
+{
+  m_weapon = "undefined";
+  isLeftHanded = false;
+  m_birthYear = 0;
+  m_globalRank = 0;
+  m_id = 0;
+  recievedBlackCard = false;
+  recievedG3RedCard = false;
+  m_deSeed = 999;
+  m_poolSeed = 999;
+  m_wonPoolMatches = 0;
+  m_lostPoolMatches = 0;
+  m_scoredPoolTouches = 0;
+  m_receivedPoolTouches = 0;
+  m_poolTouchesIndex = 0;
+  m_wonPoolMacthesRatio = 0;
+  m_checkedIn = false;
+  m_scratched = false;
+}
+
 CFencer::CFencer ( const std::string &name         ,
                    const std::string &surname      ,
                    const std::string &club         ,
