@@ -7,8 +7,8 @@ class CMatch
 {
   public:
     CMatch ();
-    virtual int            assignFencers ( const CFencer &fencer1, const CFencer &fencer2 )      ;
-    virtual int            finishMatch   ( int leftScore, int rightScore )                       ;
+    virtual int            assignFencers ( const CFencer &fencer1, const CFencer &fencer2 ) = 0  ;
+    virtual int            finishMatch   ( int leftScore, int rightScore )                  = 0  ;
     std::pair <int, int>   getScore      ()                                                 const;
     CFencer                getWinner     ()                                                 const;
     void                   setWinner     ( const CFencer &winner );
