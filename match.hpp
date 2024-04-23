@@ -9,7 +9,7 @@ class CMatch
     CMatch ();
     virtual int            assignFencers ( const CFencer &fencer1, const CFencer &fencer2 ) = 0        ;
     virtual int            finishMatch   ( int leftScore, int rightScore )                  = 0        ;
-    virtual void           repairScore   ( int leftScore, int rightScore )                  = 0        ;
+    virtual int            repairScore   ( int leftScore, int rightScore )                  = 0        ;
     virtual int            checkScoreIn  ( int leftScore, int rightScore )                  = 0        ;
     std::pair <int, int>   getScore      ()                                                       const;
     CFencer                getWinner     ()                                                       const;
