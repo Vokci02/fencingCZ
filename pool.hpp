@@ -9,6 +9,26 @@ class CPool
 {
   public:
     CPool ();
+    void                   addFencer     ( const CFencer  & fencer     );
+    void                   addReferee    ( const CReferee & referee    );
+    void                   addMatch      ( const CMatch   & match      );
+    void                   setFinished   ( bool             finished   );
+    void                   setPoolNumber ( int              poolNumber );
+    void                   setPiste      ( int              piste      );
+    void                   setTime       ( std::string      time       );
+    void                   print         () const;
+    void                   printFencers  () const;
+    void                   printReferees () const;
+    void                   printMatches  () const;
+    bool                   getFinished   () const;
+    int                    getPoolNumber () const;
+    int                    getPiste      () const;
+    std::string            getTime       () const;
+    std::vector <CFencer>  getFencers    () const;
+    std::vector <CReferee> getReferees   () const;
+    std::vector <CMatch>   getMatches    () const;
+    int                    createMatches ();
+
   
   private:
     
