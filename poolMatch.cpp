@@ -7,8 +7,14 @@ CPoolMatch::CPoolMatch (int matchId)
 
 int CPoolMatch::assignFencers ( const CFencer &fencer1, const CFencer &fencer2 )
 {
-  m_leftFencer = fencer1;
-  m_rightFencer = fencer2;
+  m_rightFencer = fencer1;
+  m_leftFencer = fencer2;
+  if ( m_rightFencer.isLeftHanded && !m_leftFencer.isLeftHanded )
+  {
+    CFencer temp = m_rightFencer;
+    m_rightFencer = m_leftFencer;
+    m_leftFencer = temp;
+  }
   return 0;
 }
 
