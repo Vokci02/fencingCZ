@@ -8,7 +8,7 @@
 class CDEMatch : public CMatch
 {
   public:
-    CDEMatch ();
+    CDEMatch (int matchId);
     int finishMatch        ( int leftScore, int rightScore );
 
   private:

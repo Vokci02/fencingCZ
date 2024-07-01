@@ -1,7 +1,7 @@
 #include "poolMatch.hpp"
 
-CPoolMatch::CPoolMatch () 
-    : CMatch ()
+CPoolMatch::CPoolMatch (int matchId) 
+    : CMatch (matchId)
 {
 }
 

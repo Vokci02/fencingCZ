@@ -5,7 +5,7 @@
 class CPoolMatch : public CMatch
 {
   public:
-    CPoolMatch                    ()                                                              ;
+    CPoolMatch                    (int matchId)                                                              ;
     
     virtual int   assignFencers   ( const CFencer &fencer1, const CFencer &fencer2          )     ;
     virtual int   checkScoreIn    ( int leftScore         , int rightScore                  )     ;

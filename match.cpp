@@ -1,7 +1,8 @@
 #include "match.hpp"
 
-CMatch::CMatch ()
+CMatch::CMatch (int matchId)
 {
+  id = matchId;
   m_leftScore = 0;
   m_rightScore = 0;
   finished = false;
