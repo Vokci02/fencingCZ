@@ -6,6 +6,7 @@
 class CMatch
 {
   public:
+    CMatch ();
     CMatch (int matchId);
     virtual int            assignFencers ( const CFencer &fencer1, const CFencer &fencer2 ) = 0        ;
     virtual int            finishMatch   ( int leftScore, int rightScore )                  = 0        ;
