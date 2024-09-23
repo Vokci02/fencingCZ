@@ -29,6 +29,7 @@ class CDEMatch : public CMatch
     bool                   m_pRedCard;
     bool                   m_pBlackCardLeft;
     bool                   m_pBlackCardRight;
+    virtual int            assignFencers ( const CFencer &fencer1, const CFencer &fencer2 ) override;
 
 };
 
